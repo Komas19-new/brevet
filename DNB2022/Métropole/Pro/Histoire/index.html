@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices de Brevet</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            height: 100vh;
+        }
+        #pdf-container {
+            flex: 1;
+            border-bottom: 2px solid #000;
+        }
+        #pdf-embed {
+            width: 100%;
+            height: 100%;
+        }
+        #response-container {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+        .exercise {
+            flex: 1;
+            margin: 10px 0;
+        }
+        textarea {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="pdf-container">
+        <embed id="pdf-embed" src="Sujet.pdf" type="application/pdf">
+    </div>
+    <div id="response-container">
+        <div class="exercise">
+            <label for="response1">Exercice 1 :</label>
+            <textarea id="response1"></textarea>
+        </div>
+        <div class="exercise">
+            <label for="response2">Exercice 2 :</label>
+            <textarea id="response2"></textarea>
+        </div>
+        <div class="exercise">
+            <label for="response3">Exercice 3 :</label>
+            <textarea id="response3"></textarea>
+        </div>
+    </div>
+</body>
+</html>
